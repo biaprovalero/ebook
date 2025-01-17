@@ -1,47 +1,189 @@
-<!DOCTYPE html>
+!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Do Sofá ao Primeiro Quilômetro</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Do Sofá Ao Primeiro Quilômetro</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html {
+            scroll-behavior: smooth;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #190680;
+            color: #ffffff;
+            line-height: 1.6;
+        }
+        header {
+            background-color: #a607d6;
+            padding: 1rem 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 100;
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+        .logo {
+            font-weight: bold;
+            font-size: 1.5rem;
+        }
+        .logo span {
+            color: #190680;
+        }
+        .nav-links {
+            display: flex;
+            list-style: none;
+        }
+        .nav-links li {
+            margin-left: 1.5rem;
+        }
+        .nav-links a {
+            color: #fff;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 0.9rem;
+            letter-spacing: 1px;
+        }
+        .hero {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            background: url('/images/drrokdes.webp') no-repeat center center/cover;
+            position: relative;
+        }
+        .hero-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1rem;
+            position: relative;
+            z-index: 1;
+        }
+        .hero::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.5);
+        }
+        .hero h1 {
+            font-size: 4rem;
+            margin-bottom: 1rem;
+        }
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
+        .cta-button {
+            display: inline-block;
+            background-color: #a607d6;
+            color: #fff;
+            padding: 0.75rem 1.5rem;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        .cta-button:hover {
+            background-color: #190680;
+        }
+        .info-section {
+            display: flex;
+            justify-content: space-between;
+            max-width: 1200px;
+            margin: 4rem auto;
+            padding: 6rem 1rem 2rem;
+        }
+        .info-box {
+            flex-basis: 48%;
+            background-color: #a607d6;
+            padding: 2rem;
+            border-radius: 10px;
+        }
+        .info-box h2 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+        .info-box ul {
+            list-style: none;
+            margin-bottom: 1.5rem;
+        }
+        .info-box li {
+            margin-bottom: 0.5rem;
+        }
+        .info-box img {
+            max-width: 100%;
+            border-radius: 5px;
+        }
+        section {
+            padding-top: 60px;
+        }
+        .main-content {
+            padding: 2rem;
+        }
+
+        button {
+            display: inline-block;
+            background-color: #a607d6;
+            color: #fff;
+            padding: 1rem 2rem;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 15px;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #190680;
+        }
+
+    </style>
 </head>
 <body>
     <header>
-        <div class="container">
-            <h1>Do Sofá ao Primeiro Quilômetro</h1>
-            <p>O Guia Completo para Iniciantes na Corrida</p>
-        </div>
+        <nav>
+            <div class="logo"><span>Do Sofá Ao</span> Primeiro Quilômetro</div>
+        </nav>
     </header>
-    <section id="sobre" class="section">
-        <div class="container">
-            <p>
-                O Ebook "Do Sofá ao Primeiro Quilômetro: O Guia Completo para Iniciantes na Corrida" é um manual motivacional e prático, desenvolvido para ajudar pessoas sedentárias ou com pouca experiência em corrida a iniciarem sua jornada. O conteúdo abrange desde os aspectos básicos da corrida até como manter a consistência ao longo do tempo, com ênfase na saúde e no bem-estar. O Ebook inclui:
-            </p>
-            <ul>
-                <li> 1. Introdução: A corrida como uma transformação de vida, destacando os benefícios físicos, mentais e emocionais da prática.</li>
-                <li> 2. Por Que Correr?: Exploração dos principais benefícios da corrida, como a melhora da saúde, perda de peso e aumento do bem-estar, além de desmistificar crenças comuns.</li>
-                <li> 3. Preparando-se para Começar: Dicas sobre a escolha de equipamentos adequados (como tênis e roupas), além de orientações sobre aquecimento, alongamento e prevenção de lesões.</li>
-                <li> 4. Plano de Ação: Programas semanais de treino, estratégias para alternar entre caminhada e corrida, e dicas de progressão para iniciantes.</li>
-                <li> 5. Nutrição Básica para Corredores Iniciantes: Sugestões de alimentos que ajudam a fornecer energia para os treinos, além de orientações sobre hidratação e alimentação pré e pós-corrida.</li>
-                <li> 6. Motivação e Consistência: Estratégias para manter a rotina de treino, superar a desmotivação e continuar avançando, mesmo diante dos desafios.</li>
-                <li> 7. Superando Desafios Comuns: Como lidar com dificuldades como a falta de tempo, lesões leves e falta de motivação, além da importância de encontrar um grupo de apoio ou parceiros para treinos.</li>
-                <li> 8. Conclusão: A celebração da conquista do primeiro quilômetro e sugestões de próximos passos para quem deseja continuar evoluindo na corrida.</li>
-            </ul>
-<br>
-<br>
-    <section id="comprar" class="section">
-        <div class="container">
-            <h2>Pronto para começar sua jornada?</h2>
-            <p>Adquira agora o Ebook e dê o primeiro passo para conquistar sua meta de corrida. O caminho está mais perto do que você imagina!</p>
-        </div>
-    </section>
-
-    <footer>
-        <div class="container">
-            <p>&copy; 2025 - Todos os direitos reservados. Ebook "Do Sofá ao Primeiro Quilômetro".</p>
-        </div>
-    </footer>
+    <main>
+        <section id="hero" class="hero">
+            <div class="hero-content">
+                <h1>Do Sofá Ao Primeiro Quilômetro</h1>
+                <h2>O Guia Completo para Iniciantes na Corrida</h2>
+                <br>
+                <p>Você já tentou correr, mas sente que não sabe por onde começar? Ou talvez fique sem fôlego rapidamente e não saiba o que está fazendo de errado? Este ebook foi feito para você! Descubra como transformar seus primeiros passos na corrida em uma jornada motivada e saudável. Chega de frustrações: com as dicas certas, você vai correr mais, melhor e com confiança.</p>
+                <section class="main-content">
+                    <button id="buybutton">Comprar Ebook</button>
+                </section>
+            </div>
+        </section>
+        <section id="info" class="info-section">
+            <div class="info-box">
+                <h2>Benefícios Concretos</h2>
+                <ul>
+                    <li>Imagine saber exatamente qual tênis usar, como criar uma rotina de treinos segura e o que fazer para evitar lesões. Com o nosso ebook, você terá todas essas respostas na palma da mão! Ele foi projetado especialmente para iniciantes que querem começar com o pé direito e alcançar resultados de forma segura e eficiente.</li>
+                </ul>
+            </div>
+            <div class="info-box">
+               <h2>Enfoque na Saúde e Bem-Estar</h2>
+               <ul>
+                    <li>Correr é uma das atividades mais simples e eficazes para melhorar a saúde, perder peso e reduzir o estresse. Mas começar sem orientação pode levar a dores e desmotivação. Nosso ebook oferece um guia passo a passo para te ajudar a criar hábitos saudáveis ​​e aproveitar todos os benefícios da corrida, sem complicações.</li>
+               </ul>
+            </div>
+    </main>
+    <script src="script.js"></script>
 </body>
 </html>
