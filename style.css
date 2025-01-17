@@ -1,0 +1,85 @@
+/* Estilo global */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(90deg, #6a00a3, #007bbd, #000000);
+    color: #fff;
+    line-height: 1.6;
+    text-align: center;
+}
+
+/* Header */
+header {
+    background: linear-gradient(90deg, #6a00a3, #007bbd, #000000);
+    padding: 1rem 0.5rem;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+header p {
+    font-size: 1.2rem;
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+/* Benefits Section */
+.benefits {
+    margin: 2rem auto;
+    padding: 1.5rem;
+    max-width: 400px;
+    background-color: #0000004d;
+    border-radius: 10px;
+}
+
+.benefits h2 {
+    color: #fff;
+    margin-bottom: 1rem;
+}
+
+.benefits ul {
+    list-style: none;
+    padding: 0;
+}
+
+.benefits li {
+    text-align: left;
+    font-size: 1.1rem;
+    margin: 0.5rem 0;
+    padding-left: 1.5rem;
+    background: url('https://via.placeholder.com/20/6a00a3/ffffff?text=✓') no-repeat left center;
+}
+
+/* Call to Action Button */
+.cta {
+    margin: 2rem 0;
+}
+
+button {
+    background-color: #6a00a3;
+    color: #fff;
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #007bbd;
+    transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+    background-color: #000;
+    color: #fff;
+    padding: 0.2rem 0;
+    font-size: 0.9rem;
+    bottom: 0;
+    width: 100%;
+}
